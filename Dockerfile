@@ -16,4 +16,4 @@ RUN apt-get update && apt-get install -y \
 
 RUN git clone --recursive https://github.com/AstraZeneca-NGS/VarDictJava.git
 
-RUN /opt/VarDictJava/gradlew clean installApp 
+RUN cd /opt/VarDictJava; ./gradlew clean installApp 
