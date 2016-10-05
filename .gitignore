@@ -11,3 +11,5 @@ bin/
 .gradle/
 .settings/
 /build
+.Rproj.user
+*.Rproj
