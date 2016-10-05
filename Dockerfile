@@ -13,3 +13,7 @@ RUN apt-get update && apt-get install -y \
     libgnutls-dev \
     default-jre \
     default-jdk
+
+RUN git clone --recursive https://github.com/AstraZeneca-NGS/VarDictJava.git
+
+RUN /opt/VarDictJava/gradlew clean installApp 
