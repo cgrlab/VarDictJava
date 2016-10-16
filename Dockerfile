@@ -12,7 +12,8 @@ RUN apt-get update && apt-get install -y \
     libcurl4-gnutls-dev \
     libgnutls-dev \
     default-jre \
-    default-jdk
+    default-jdk \
+    r-base
 
 RUN git clone --recursive https://github.com/AstraZeneca-NGS/VarDictJava.git
 
